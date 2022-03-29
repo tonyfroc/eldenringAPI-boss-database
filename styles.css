@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #555;
+  background-color: white;
+  background-image: url('https://images4.alphacoders.com/115/1151249.jpg');
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.bosses {
+  /* margin-bottom: 8rem; */
+  display: flex;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.boss {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  width: 40rem;
+  border-radius: 0.7rem;
+  margin: 0 3rem;
+  /* overflow: hidden; */
+}
+
+.boss__img {
+  width: 40rem;
+  height: 17rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.boss__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+  font-size: 15px;
+}
+
+.boss__name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+  font-family: 'Metal Mania', cursive;
+  color: black; 
+}
+
+.boss__region {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.boss__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.boss__row span {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+
+.boss__row_health span {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: rgb(151, 12, 12);
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.boss__row_description span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(66, 57, 57); 
+}
+
+.boss__row_reward span {
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #CEA84A; 
+}
+
+.bossLocation::before {
+  content: 'Boss Location';
+  width: 100%;
+  position: absolute;
+  top: -4rem;
+
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.bossLocation {
+  transform: scale(0.8) translateY(1rem);
+  margin-left: 0;
+}
+
+.location__img {
+  width: 40rem;
+  height: 17rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.location__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+  font-size: 15px;
+}
+
+.location_description span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(66, 57, 57); 
+}
+
+.location__name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+  font-family: 'Metal Mania', cursive;
+  color: black; 
+}
+
+.btn-boss {
+  border: none;
+  font-size: 2rem;
+  padding: 2rem 5rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  display: block;
+  width: 80rem;
+  margin: 4rem;
+}
+
+.images img.parallel {
+  width: 40rem;
+  margin: 2rem;
+  border: 3rem solid white;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+}
