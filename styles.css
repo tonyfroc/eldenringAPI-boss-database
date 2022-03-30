@@ -222,13 +222,13 @@ body {
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 25px;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: 'Metal Mania', cursive;
   margin: 0;
 }
 
@@ -254,7 +254,7 @@ body {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(25, 82, 77);
+  background-color: rgb(97, 88, 13);
   color: white;
 }
 
