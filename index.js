@@ -1,7 +1,7 @@
 "use strict";
 
 const bossesContainer = document.querySelector(".bosses");
-console.log(bossesContainer);
+// console.log(bossesContainer);
 
 const renderBoss = function (data, className) {
   if (data.healthPoints === "???") {
@@ -50,9 +50,11 @@ const getBossAndLocation = function (boss) {
 };
 
 
+
+
 // Bosses with All Data and Location info
 
-// getBossAndLocation('Esgar, Priest Of Blood')
+getBossAndLocation('Esgar, Priest Of Blood')
 // getBossAndLocation('Elemer Of The Briar')
 // getBossAndLocation("Scaly Misbegotten");
 // getBossAndLocation("Demi-human")
