@@ -4,40 +4,203 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metal+Mania&family=Satisfy&display=swap" rel="stylesheet">    <title id="title">Elden Ring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="jquery-3.6.0.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metal+Mania&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title id="title">Elden Ring</title>
   </head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#limgrave">Limgrave</a>
-      <a href="#weepingPenninsula">Weeping Penninsula</a>
-      <a href="#liurniaOfTheLakes">Liurnia of the Lakes</a>
-      <a href="#caelid">Caelid</a>
-      <a href="#altusPlateau">Altus Plateau</a>
-      <a href="#mountaintopsOfTheGiants">Mountaintops of the Giants</a>
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      <a href="#home" class="active">REGIONS: </a>
+      <a href="#limgrave" class="limgrave">Limgrave</a>
+      <a href="#weepingPenninsula" class="weepingPeninsula">Weeping Peninsula</a>
+      <a href="#liurniaOfTheLakes" class="liurniaOfTheLakes">Liurnia of the Lakes</a>
+      <a href="#caelid" class="caelid">Caelid</a>
+      <a href="#altusPlateau" class="altusPlateau">Altus Plateau</a>
+      <a href="#mountaintopsOfTheGiants" class="mountaintopsOfTheGiants">Mountaintops of the Giants</a>
+    </div>
+    <div class="regions">
+    <div id="limgrave">
+      <h2>Limgrave</h2>
+      <p>
+        "Limgrave is a lush, expansive section of the Tenebrae Demesne. Golden
+        trees and tall grass and bushes provide plenty of sustenance for the
+        local wildlife, that features boars, sheep, goat and rodents in addition
+        to flying creatures such as eagles and owls. More sinister and
+        aggressive wildlife also exists, and those venturing forth should be
+        prepared to combat them."
+      </p>
+        <label for="limgraveBosses">Select a Boss From Limgrave: </label>
+        <select class="form-control" id="limgrave-bosses">
+          <option disabled selected value> -- Select a Boss -- </option>
+          <option value="Soldier Of Godrick">Soldier Of Godrick</option>
+          <option value="Ancestor Spirit">Ancestor Spirit</option>
+          <option value="Beast Of Farum Azula">Beast of Farum Azula</option>
+          <option value="Tree Sentinel">Tree Sentinel</option>
+          <option value="Black Knife Assassin">Black Knife Assassin</option>
+          <option value="Bloodhound Knight Darriwil">Bloodhound Knight Darriwil</option>
+          <option value="Burial Tree Watchdog">Burial Tree Watchdog</option>
+          <option value="Deathbird">Deathbird</option>
+          <option value="Demi-human Chief">Demi-human Chief</option>
+          <option value="Dragonkin Soldier Of Nokstella">Dragonkin Soldier Of Nokstella</option>
+          <option value="Fia's Champions">Fia's Champions</option>
+          <option value="Flying Dragon Agheel">Flying Dragon Agheel</option>
+          <option value="Godrick The Grafted">Godrick The Grafted</option>
+          <option value="Guardian Golem">Guardian Golem</option>
+          <option value="Lichdragon Fortissax">Lichdragon Fortissax</option>
+          <option value="Mad Pumpkin Head">Mad Pumpkin Head</option>
+          <option value="Lion Guardian">Lion Guardian</option>
+          <option value="Mimic Tear">Mimic Tear</option>
+          <option value="Mohg, Lord Of Blood">Mohg, Lord Of Blood</option>
+          <option value="Night's Cavalry">Night's Cavalry</option>
+          <option value="Regal Ancestor Spirit">Regal Ancestor Spirit</option>
+          <option value="Valiant Gargoyle">Valiant Gargoyle</option>
+        </select>               
+      </form> 
+    </div>
+
+    <div id="weepingPeninsula">
+      <h2>Weeping Peninsula</h2>
+      <p>
+        "A large peninsula that split off from the main Limgrave landmass in the south, connected only by the Bridge of Sacrifice. The Weeping Peninsula is a sullen land beset by a perpetual atmosphere of grief and loss. The besieged Castle Morne lies in ruins to its south."
+      </p>
+      <label for="weepingPeninsulaBosses">Select a Boss From Weeping Peninsula: </label>
+      <select class="form-control" id="weepingPeninsula-bosses">
+        <option disabled selected value> -- Select a Boss -- </option>
+        <option value="Ancient Hero Of Zamor">Ancient Hero of Zamor</option>
+        <option value="Leonine Misbegotten">Leonine Misbegotten</option>
+        <option value="Miranda The Blighted Bloom">Miranda The Blighted Bloom</option>
+        <option value="Pumpkin Head">Pumpkin Head</option>
+        <option value="Runebear">Runebear</option>
+        <option value="Scaly Misbegotten">Scaly Misbegotten</option>
+      </select>               
+    </form> 
+    </div>
+
+    <div id="liurniaOfTheLakes">
+      <h2>Liurnia Of The Lakes</h2>
+      <p>
+        "With its shallow waters and vast wetlands, the region of Liurnia is
+        beset with the gradual sinking of most of its landmass. With its forests
+        perpetually blanketed in fog, eerie sounds of bells can be heard in the
+        distance."
+      </p>
+      <label for="liurniaOfTheLakesBosses">Select a Boss From Limgrave: </label>
+      <select class="form-control" id="liurniaOfTheLakes-bosses">
+        <option disabled selected value> -- Select a Boss -- </option>
+        <option value="Alecto, Black Knife Ringleader">Alecto, Black Knife Ringleader</option>
+        <option value="Alabaster Lord">Alabaster Lord</option>
+        <option value="Adan, Thief Of Fire">Adan, Thief Of Fire</option>
+        <option value="Cleanrot Knight">Cleanrot Knight</option>
+        <option value="Glintstone Dragon Smarag">Glintstone Dragon Smarag</option>
+        <option value="Glintstone Dragon Adula">Glintstone Dragon Adula</option>
+        <option value="Grafted Scion">Grafted Scion</option>
+        <option value="Omenkiller">Omenkiller</option>
+        <option value="Onyx Lord">Onyx Lord</option>
+        <option value="Red Wolf Of Radagon">Red Wolf Of Radagon</option>
+        <option value="Royal Knight Loretta">Royal Knight Loretta</option>
+        <option value="Royal Revenant">Royal Revenant</option>
+        <option value="Spirit-caller Snail">Spirit-caller Snail</option>
+        <option value="Tibia Mariner">Tibia Mariner</option>
+      </select>               
+    </form> 
+    </div>
+  </div>
+
+    <div id="caelid">
+      <h2>Caelid</h2>
+      <p>
+        "An arid wasteland found east of Limgrave. Caelid is marred by scarlet rot, mutating its flora and fauna, bathing the environment in a deathly hue. Death and decay are all too frequent sights here."
+      </p>
+      <label for="caelidBosses">Select a Boss From Limgrave: </label>
+      <select class="form-control" id="caelid-bosses">
+        <option disabled selected value> -- Select a Boss -- </option>
+        <option value="Flying Dragon Greyll">Flying Dragon Greyll</option>
+        <option value="Frenzied Duelist">Frenzied Duelist</option>
+        <option value="Magma Wyrm">Magma Wyrm</option>
+        <option value="Beast Clergyman">Beast Clergyman</option>
+        <option value="Commander O'neil">Commander O'neil</option>
+        <option value="Decaying Ekzykes">Decaying Ekzykes</option>
+        <option value="Cemetery Shade">Cemetery Shade</option>
+        <option value="Fallingstar Beast">Fallingstar Beast</option>
+        <option value="Godskin Apostle">Godskin Apostle</option>
+        <option value="Nox Swordstress & Nox Priest">Nox Swordstress & Nox Priest</option>
+        <option value="Putrid Tree Spirit">Putrid Tree Spirit</option>
+        <option value="Starscourge Radahn">Starscourge Radahn</option>
+        
+      </select>               
+    </form> 
+    </div>
+
+    <div id="altusPlateau">
+      <h2>Altus Plateau</h2>
+      <p>
+        We think Swift would be a perfect fit for you! Swift is a full stack
+        language geared towards mobile application development.
+      </p>
+      <label for="liurniaOfTheLakesBosses">Select a Boss From Limgrave: </label>
+      <select class="form-control" id="altusPlateau-bosses">
+        <option disabled selected value> -- Select a Boss -- </option>
+        <option value="Ancient Dragon Lansseax">Ancient Dragon Lansseax</option>
+        <option value="Crucible Knight Ordovis">Crucible Knight Ordovis</option>
+        <option value="Divine Bridge Golem">Divine Bridge Golem</option>
+        <option value="Crystalians">Crystalians</option>
+        <option value="Draconic Tree Sentinel">Draconic Tree Sentinel</option>
+        <option value="Crucible Knight">Crucible Knight</option>
+        <option value="Elden Beast">Elden Beast</option>
+        <option value="Elemer Of The Briar">Elemer Of The Briar</option>
+        <option value="Esgar, Priest Of Blood">Esgar, Priest Of Blood</option>
+        <option value="Fell Twins">Fell Twins</option>
+        <option value="Godefroy The Grafted">Godefroy The Grafted</option>
+        <option value="Godfrey The Grafted">Godfrey The Grafted</option>
+        <option value="Godfrey, First Elden Lord (hoarah Loux)">Godfrey, First Elden Lord (hoarah Loux)</option>
+        <option value="Godskin Apostle">Godskin Apostle</option>
+        <option value="Hoarah Loux, Warrior">Hoarah Loux, Warrior</option>
+        <option value="Godskin Duo">Godskin Duo</option>
+        <option value="Mohg, The Omen">Mohg, The Omen</option>
+        <option value="Maliketh, The Black Blade">Maliketh, The Black Blade</option>
+        <option value="Magma Wyrm Makar">Magma Wyrm Makar</option>
+        <option value="Necromancer Garris">Necromancer Garris</option>
+        <option value="Radagon Of The Golden Order">Radagon Of The Golden Order</option>
+        <option value="Sir Gideon Ofnir, The All-knowing">Sir Gideon Ofnir, The All-knowing</option>
+        <option value="Wormface">Wormface</option>
+
+      </select>               
+    </form> 
+    </div>
+
+    <div id="mountaintopsOfTheGiants">
+      <h2>Mountaintops of the Giants</h2>
+      <p>
+        "The lands of the Giants are no more. Devastated by The Shattering, their forge lies cold and their frozen corpses litter the desolated region, now only inhabitable by spirits.""
+      </p>
+      <label for="mountaintopsOfTheGiants">Select a Boss From Mountaintops of the Giants: </label>
+      <select class="form-control" id="mountaintopsOfTheGiants-bosses">
+        <option disabled selected value> -- Select a Boss -- </option>
+        <option value="Dragonlord Placidusax">Dragonlord Placidusax</option>
+        <option value="Fire Giant">Fire Giant</option>
+        <option value="Godskin Apostle And Godskin Noble">Godskin Apostle And Godskin Noble</option>
+        <option value="Borealis The Freezing Fog">Borealis The Freezing Fog</option>
+        <option value="Great Wyrm Theodorix">Great Wyrm Theodorix</option>
+        <option value="Misbegotten Crusader">Misbegotten Crusader</option>
+        <option value="Death Rite Bird">Death Rite Bird</option>
+      </select>               
+    </form> 
     </div>
     <main class="container">
-      <div class="bosses">
-        </div>
+      <div class="bosses"></div>
       <div class="images"></div>
     </main>
   </body>

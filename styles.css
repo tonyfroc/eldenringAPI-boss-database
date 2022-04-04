@@ -13,7 +13,7 @@ body {
   font-family: system-ui;
   color: #555;
   background-color: white;
-  background-image: url('https://images4.alphacoders.com/115/1151249.jpg');
+  background-image: url("https://images4.alphacoders.com/115/1151249.jpg");
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -61,8 +61,8 @@ body {
 .boss__name {
   font-size: 2.7rem;
   margin-bottom: 0.7rem;
-  font-family: 'Metal Mania', cursive;
-  color: black; 
+  font-family: "Metal Mania", cursive;
+  color: black;
 }
 
 .boss__region {
@@ -96,7 +96,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  color: rgb(66, 57, 57); 
+  color: rgb(66, 57, 57);
 }
 
 .boss__row_reward span {
@@ -105,11 +105,11 @@ body {
   font-weight: bold;
   font-style: italic;
   font-size: 1.5rem;
-  color: #CEA84A; 
+  color: #cea84a;
 }
 
 .bossLocation::before {
-  content: 'Boss Location';
+  content: "Boss Location";
   width: 100%;
   position: absolute;
   top: -4rem;
@@ -145,14 +145,14 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  color: rgb(66, 57, 57); 
+  color: rgb(66, 57, 57);
 }
 
 .location__name {
   font-size: 2.7rem;
   margin-bottom: 0.7rem;
-  font-family: 'Metal Mania', cursive;
-  color: black; 
+  font-family: "Metal Mania", cursive;
+  color: black;
 }
 
 .btn-boss {
@@ -182,7 +182,6 @@ body {
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -191,7 +190,6 @@ body {
   width: 100%;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -200,78 +198,34 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Metal Mania', cursive;
+  font-family: "Metal Mania", cursive;
 }
 
-/* Add an active class to highlight the current page */
 .active {
   background-color: rgb(25, 82, 77);
   color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-  font-size: 25px;
-  border: none;
-  outline: none;
+.topnav a:hover {
+  background-color: rgb(73, 72, 72);
   color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: 'Metal Mania', cursive;
-  margin: 0;
 }
 
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.topnav a:focus {
+  background-color: rgb(25, 82, 77);
+  color: white;
 }
 
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover:not(.active) {
   background-color: rgb(97, 88, 13);
-  color: white;
 }
 
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
@@ -280,9 +234,10 @@ body {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -293,11 +248,53 @@ body {
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+}
+
+
+#limgrave {
+  display: none;
+  text-align: center;
+  color: white; 
+  position: top;
+  width: 40%;
+}
+
+#weepingPeninsula {
+  display: none;
+  text-align: center;
+  color: white; 
+  position: top;
+  width: 40%;
+}
+
+#liurniaOfTheLakes {
+  display: none;
+  text-align: center;
+  color: white; 
+  position: top;
+  width: 40%;
+}
+
+#caelid {
+  display: none;
+  text-align: center;
+  color: white; 
+  position: top;
+  width: 40%;
+}
+
+#altusPlateau {
+  display: none;
+  text-align: center;
+  color: white; 
+  position: top;
+  width: 40%;
+}
+
+#mountaintopsOfTheGiants {
+  display: none;
+  text-align: center;
+  color: white; 
+  position: top;
+  width: 40%;
 }
