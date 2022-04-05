@@ -126,6 +126,12 @@ body {
   margin-left: 0;
 }
 
+.regions {
+  display: flex; 
+  text-align: center;
+  justify-content: center;
+}
+
 .location__img {
   width: 40rem;
   height: 17rem;
