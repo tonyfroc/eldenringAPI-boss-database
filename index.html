@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Metal+Mania&family=Satisfy&display=swap"
       rel="stylesheet"
     />
-    <title id="title">Elden Ring</title>
+    <title id="title">Elden Ring Boss Database</title>
   </head>
   <link
     rel="stylesheet"
@@ -23,7 +23,7 @@
   />
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">REGIONS: </a>
+      <a href="#home" class="active">Elden Ring Boss Database: </a>
       <a href="#limgrave" class="limgrave">Limgrave</a>
       <a href="#weepingPenninsula" class="weepingPeninsula"
         >Weeping Peninsula</a
@@ -36,19 +36,23 @@
       <a href="#mountaintopsOfTheGiants" class="mountaintopsOfTheGiants"
         >Mountaintops of the Giants</a
       >
+      <a href="#EldenRingMap" class="mountaintopsOfTheGiants"
+      >Elden Ring Full Map</a
+    >
     </div>
     <div class="regions">
       <div id="limgrave">
         <h2>Limgrave</h2>
+        <h3>Description</h3>
         <p>
-          Description: "Limgrave is a lush, expansive section of the Tenebrae
+          "Limgrave is a lush, expansive section of the Tenebrae
           Demesne. Golden trees and tall grass and bushes provide plenty of
           sustenance for the local wildlife, that features boars, sheep, goat
           and rodents in addition to flying creatures such as eagles and owls.
           More sinister and aggressive wildlife also exists, and those venturing
           forth should be prepared to combat them."
         </p>
-        <label for="limgraveBosses">Select a Boss From Limgrave: </label>
+        <label for="limgraveBosses">Select a boss from Limgrave: </label>
         <select class="form-control" id="limgrave-bosses">
           <option disabled selected value>-- Select a Boss --</option>
           <option value="Soldier Of Godrick">Soldier Of Godrick</option>
@@ -78,40 +82,40 @@
           <option value="Regal Ancestor Spirit">Regal Ancestor Spirit</option>
           <option value="Valiant Gargoyle">Valiant Gargoyle</option>
         </select>
+        <img src="https://progameguides.com/wp-content/uploads/2022/02/Elden-Ring-Limgrave-West-Map-Fragment-Map-Location-1024x576.jpg" alt="Map of Limgrave" id="limgraveImg">
       </div>
       <div id="weepingPeninsula">
         <h2>Weeping Peninsula</h2>
+        <h3>Description</h3>
         <p>
-          Description: "A large peninsula that split off from the main Limgrave
+          "A large peninsula that split off from the main Limgrave
           landmass in the south, connected only by the Bridge of Sacrifice. The
           Weeping Peninsula is a sullen land beset by a perpetual atmosphere of
           grief and loss. The besieged Castle Morne lies in ruins to its south."
         </p>
-        <label for="weepingPeninsulaBosses"
-          >Select a Boss From Weeping Peninsula:
-        </label>
+        <label for="weepingPeninsulaBosses" >Select a boss from Weeping Peninsula: </label>
         <select class="form-control" id="weepingPeninsula-bosses">
-          <option disabled selected value>-- Select a Boss --</option>
-          <option value="Ancient Hero Of Zamor">Ancient Hero of Zamor</option>
-          <option value="Leonine Misbegotten">Leonine Misbegotten</option>
-          <option value="Miranda The Blighted Bloom">
-            Miranda The Blighted Bloom
-          </option>
-          <option value="Pumpkin Head">Pumpkin Head</option>
-          <option value="Runebear">Runebear</option>
-          <option value="Scaly Misbegotten">Scaly Misbegotten</option>
+        <option disabled selected value>-- Select a Boss --</option>
+        <option value="Ancient Hero Of Zamor">Ancient Hero of Zamor</option>
+        <option value="Leonine Misbegotten">Leonine Misbegotten</option>
+        <option value="Miranda The Blighted Bloom"> Miranda The Blighted Bloom</option>
+        <option value="Pumpkin Head">Pumpkin Head</option>
+        <option value="Runebear">Runebear</option>
+        <option value="Scaly Misbegotten">Scaly Misbegotten</option>
         </select>
+        <img src="https://progameguides.com/wp-content/uploads/2022/03/Elden-Ring-Map-Fragment-Weeping-Peninsula-Map-Location-1024x576.jpg" alt="Map of the Weeping Peninsula" id="weepingPeninsulaImg" >
       </div>
       <div id="liurniaOfTheLakes">
         <h2>Liurnia Of The Lakes</h2>
+        <h3>Description</h3>
         <p>
-          Description: "With its shallow waters and vast wetlands, the region of
+          "With its shallow waters and vast wetlands, the region of
           Liurnia is beset with the gradual sinking of most of its landmass.
           With its forests perpetually blanketed in fog, eerie sounds of bells
           can be heard in the distance."
         </p>
         <label for="liurniaOfTheLakesBosses"
-          >Select a Boss From Limgrave:
+          >Select a boss from Liurnia of The Lakes:
         </label>
         <select class="form-control" id="liurniaOfTheLakes-bosses">
           <option disabled selected value>-- Select a Boss --</option>
@@ -136,16 +140,18 @@
           <option value="Spirit-caller Snail">Spirit-caller Snail</option>
           <option value="Tibia Mariner">Tibia Mariner</option>
         </select>
+        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/liurnia-of-the-lakes-map-in-elden-ring.jpg?q=50&fit=contain&w=960&h=480&dpr=1.5" alt="Map of Liurnia of the Lakes" id="liurniaOfTheLakesImg">
       </div>
       <div id="caelid">
         <h2>Caelid</h2>
+        <h3>Description</h3>
         <p>
-          Description: "An arid wasteland found east of Limgrave. Caelid is
+          "An arid wasteland found east of Limgrave. Caelid is
           marred by scarlet rot, mutating its flora and fauna, bathing the
           environment in a deathly hue. Death and decay are all too frequent
           sights here."
         </p>
-        <label for="caelidBosses">Select a Boss From Limgrave: </label>
+        <label for="caelidBosses">Select a boss from Caelid: </label>
         <select class="form-control" id="caelid-bosses">
           <option disabled selected value>-- Select a Boss --</option>
           <option value="Flying Dragon Greyll">Flying Dragon Greyll</option>
@@ -163,18 +169,19 @@
           <option value="Putrid Tree Spirit">Putrid Tree Spirit</option>
           <option value="Starscourge Radahn">Starscourge Radahn</option>
         </select>
+        <img src="https://d1fytg1nnnd8c0.cloudfront.net/wp-content/uploads/2022/02/Elden-Ring-Screenshot-2022.02.19-12.32.02.56.jpg" alt="Map of Caelid" id="caelidImg">
       </div>
-
       <div id="altusPlateau">
         <h2>Altus Plateau</h2>
+        <h3>Description</h3>
         <p>
-          Description: "A vast landscape with golden trees and lush vegetation,
+          "A vast landscape with golden trees and lush vegetation,
           Altus Plateau lies directly north of Liurnia. It is the gateway to the
           capital city of Leyndell and sits between the Capital Outskirts to the
           east, and the volcanic Mt. Gelmir to the west.
         </p>
         <label for="liurniaOfTheLakesBosses"
-          >Select a Boss From Limgrave:
+          >Select a boss from Altus Plateau:
         </label>
         <select class="form-control" id="altusPlateau-bosses">
           <option disabled selected value>-- Select a Boss --</option>
@@ -214,17 +221,19 @@
           </option>
           <option value="Wormface">Wormface</option>
         </select>
+        <img src="https://img.game8.co/3496055/72f1702a1a27f37a60851fa35eceb695.jpeg/original" alt="Map of Altus Plateau" id="altusPlateauImg">
       </div>
 
       <div id="mountaintopsOfTheGiants">
         <h2>Mountaintops of the Giants</h2>
+        <h3>Description</h3>
         <p>
-          Description: "The lands of the Giants are no more. Devastated by The
+          "The lands of the Giants are no more. Devastated by The
           Shattering, their forge lies cold and their frozen corpses litter the
           desolated region, now only inhabitable by spirits.""
         </p>
         <label for="mountaintopsOfTheGiants"
-          >Select a Boss From Mountaintops of the Giants:
+          >Select a boss from Mountaintops of the Giants:
         </label>
         <select class="form-control" id="mountaintopsOfTheGiants-bosses">
           <option disabled selected value>-- Select a Boss --</option>
@@ -240,7 +249,11 @@
           <option value="Misbegotten Crusader">Misbegotten Crusader</option>
           <option value="Death Rite Bird">Death Rite Bird</option>
         </select>
+        <img src="https://img.game8.co/3497182/8b20adc70007ab4c59a9bfe5517cfa3e.jpeg/original" alt="Map of Mountaintops of the Giants" id="mountaintopsOfTheGiantsImg">
       </div>
+      <!-- <div id="eldenRingFullMap">
+        <img src="https://img.game8.co/3497182/8b20adc70007ab4c59a9bfe5517cfa3e.jpeg/original" alt="Map of Mountaintops of the Giants" id="mountaintopsOfTheGiantsImg">
+      </div> -->
     </div>
     <main class="container">
       <div class="bosses"></div>
