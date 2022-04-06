@@ -1,6 +1,6 @@
 "use strict";
 
-// UI Logic
+// UI Logic 
 
 const bossesContainer = document.querySelector(".bosses");
 
@@ -34,6 +34,8 @@ const renderLocation = function (data, className) {
   bossesContainer.style.opacity = 1;
 };
 
+// UI/API Logic 
+
 const getBossAndLocation = function (boss) {
   fetch(`https://eldenring.fanapis.com/api/bosses?name=${boss}`)
     .then((response) => response.json())
@@ -49,21 +51,7 @@ const getBossAndLocation = function (boss) {
     .then((data) => renderLocation(data.data[0], "bossLocation"));
 };
 
-function clearFields() {
-  clearCards();
-  $("#limgrave").hide();
-  $("#weepingPeninsula").hide();
-  $("#liurniaOfTheLakes").hide();
-  $("#caelid").hide();
-  $("#altusPlateau").hide();
-  $("#mountaintopsOfTheGiants").hide();
-  $("#allEldenRingBosses").hide();
-}
-
-function clearCards() {
-  $(".bosses").text("");
-  $(".images").text("");
-}
+// UI Logic Cont.
 
 $(document).ready(function () {
   $(".limgrave").click(function (event) {
@@ -128,3 +116,21 @@ $(document).ready(function () {
     getBossAndLocation(boss);
   });
 });
+
+// Utility Logic 
+
+function clearFields() {
+  clearCards();
+  $("#limgrave").hide();
+  $("#weepingPeninsula").hide();
+  $("#liurniaOfTheLakes").hide();
+  $("#caelid").hide();
+  $("#altusPlateau").hide();
+  $("#mountaintopsOfTheGiants").hide();
+  $("#allEldenRingBosses").hide();
+}
+
+function clearCards() {
+  $(".bosses").text("");
+  $(".images").text("");
+}
