@@ -21,4 +21,4 @@
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_  
-Copyright (c) 2022, Tony Froccaro
+Copyright (c) 2022, Tony Froccaro, Marcus Ferreira, Erika Mogollon
