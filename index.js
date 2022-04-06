@@ -57,6 +57,7 @@ function clearFields() {
   $("#caelid").hide();
   $("#altusPlateau").hide();
   $("#mountaintopsOfTheGiants").hide();
+  $("#allEldenRingBosses").hide();
 }
 
 function clearCards() {
@@ -88,6 +89,10 @@ $(document).ready(function () {
   $(".mountaintopsOfTheGiants").click(function (event) {
     clearFields();
     $("#mountaintopsOfTheGiants").show();
+  });
+  $(".allEldenRingBosses").click(function (event) {
+    clearFields();
+    $("#allEldenRingBosses").show();
   });
 });
 

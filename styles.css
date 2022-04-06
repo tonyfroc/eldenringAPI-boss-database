@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -14,10 +15,14 @@ body {
   color: #555;
   background-color: white;
   background-image: url("https://images4.alphacoders.com/115/1151249.jpg");
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%
 }
 
 h1 {
@@ -36,13 +41,22 @@ h3 {
   font-style: italic;
 }
 
+h5 {
+  font-family: "Metal Mania", cursive;
+  color: rgb(212, 169, 81);
+}
+
 p {
-  font-style: italic; 
+  font-style: italic;
   font-size: 12px;
 }
 
 label {
   color: rgb(151, 12, 12);
+  font-size: 15px;
+}
+
+li {
   font-size: 15px;
 }
 
@@ -329,8 +343,8 @@ label {
   width: 40%;
 }
 
-#eldenRingFullMap {
-  display: none; 
+#allEldenRingBosses {
+  display: none;
 }
 
 #limgraveImg {
