@@ -44,6 +44,8 @@ No tests written.
 
 - The "All Elden Ring Bosses" section is not rendered correctly. All bosses are listed vertically as opposed to horizontally in 6 different columns.
 
+- Some attributes for the bosses return a `???` for the values. 
+
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_  

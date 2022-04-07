@@ -51,7 +51,7 @@ const getBossAndLocation = function (boss) {
     .then((data) => renderLocation(data.data[0], "bossLocation"));
 };
 
-// UI Logic Cont.
+// clearing the region div on click 
 
 $(document).ready(function () {
   $(".limgrave").click(function (event) {
@@ -83,6 +83,8 @@ $(document).ready(function () {
     $("#allEldenRingBosses").show();
   });
 });
+
+// clearing the boss/location image on click 
 
 $(document).ready(function () {
   $("#limgrave-bosses").on("change", function (event) {

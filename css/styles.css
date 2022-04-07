@@ -54,10 +54,16 @@ p {
 label {
   color: rgb(151, 12, 12);
   font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
 }
 
 li {
   font-size: 15px;
+}
+
+select {
+  text-align: center;
 }
 
 .container {
